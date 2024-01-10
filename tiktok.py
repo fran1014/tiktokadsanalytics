@@ -8,3 +8,6 @@ import json
 verifyFp = "verify_lr7n1c0e_hzfMeVrw_iRgb_4Qv0_AQ48_hNqXKPPLMPfo"
 #Setup instance
 api = tiktok.get_instance(custom_verifyFp=verifyFp, use_test_endpoinds= True)
+#Get data by hashtag
+trending = api.by_hashtag('Python')
+print(trending)
